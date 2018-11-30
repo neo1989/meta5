@@ -20,8 +20,8 @@ if version >= 700
   hi MatchParen   guifg=#ffaf00 guibg=NONE gui=bold ctermfg=214 ctermbg=NONE cterm=bold
   hi Pmenu        guifg=#eeeeee guibg=#444444 ctermfg=255 ctermbg=238
   hi PmenuSel     guifg=#000000 guibg=#df8700 ctermfg=0 ctermbg=172
-  hi search       guifg=#ff00ff guibg=NONE gui=underline ctermfg=201 ctermbg=NONE cterm=underline
-  hi Incsearch    guifg=#ff00ff guibg=NONE gui=underline ctermfg=201 ctermbg=NONE cterm=underline
+  hi search       guifg=#ff0000 guibg=NONE gui=underline ctermfg=196 ctermbg=NONE cterm=underline
+  hi Incsearch    guifg=#ff0000 guibg=NONE gui=underline ctermfg=196 ctermbg=NONE cterm=underline
 endif
 
 " General colors
@@ -84,20 +84,3 @@ if has("spell")
    hi spellRare      guifg=#bcbcbc guibg=#1c1c1c ctermfg=250 ctermbg=233
    hi spelllocal     cterm=NONE ctermfg=NONE ctermbg=20 gui=NONE guifg=NONE guibg=#0000df
 endif
-
-
-
-" LANGUAGE OVERRIDES
-
-" Coffeescript
-hi coffeeEmbed          guifg=#87ffaf ctermfg=121
-
-hi link coffeeSemicolonError NONE
-hi link coffeeSpaceError NONE
-hi link coffeeReservedError NONE
-
-"Ruby
-hi link rubyFunction PreProc
-hi link rubyDefine Define
-hi link rubyModule Keyword
-hi link rubyClass Keyword
