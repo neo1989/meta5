@@ -14,14 +14,14 @@ let colors_name = "meta5"
 
 " Vim >= 7.0 specific colors
 if version >= 700
-  hi iCursor      guifg=#000000 guibg=#d0d0d0 ctermfg=0 ctermbg=252
-  hi CursorLine   guibg=#262626 gui=NONE ctermbg=234 cterm=NONE
+  hi iCursor      guifg=#000000 guibg=#d0d0d0 ctermfg=0 ctermbg=0
+  hi CursorLine   guibg=#262626 gui=NONE ctermbg=235 cterm=bold
   hi CursorColumn guifg=#ffffff guibg=#303030 ctermbg=238
   hi MatchParen   guifg=#ffaf00 guibg=NONE gui=bold ctermfg=214 ctermbg=NONE cterm=bold
   hi Pmenu        guifg=#eeeeee guibg=#444444 ctermfg=255 ctermbg=238
   hi PmenuSel     guifg=#000000 guibg=#df8700 ctermfg=0 ctermbg=172
-  hi search       guifg=#ff0000 guibg=NONE gui=underline ctermfg=196 ctermbg=NONE cterm=underline
-  hi Incsearch    guifg=#ff0000 guibg=NONE gui=underline ctermfg=196 ctermbg=NONE cterm=underline
+  hi Search       guifg=#ff0000 guibg=NONE gui=underline ctermfg=196 ctermbg=NONE cterm=underline
+  hi Incsearch    guifg=#ff0000 guibg=NONE gui=underline ctermfg=201 ctermbg=NONE cterm=underline
 endif
 
 " General colors
@@ -29,7 +29,7 @@ hi Cursor         guifg=#000000 guibg=#d0d0d0 ctermfg=0 ctermbg=252
 hi NonText        guifg=#5f5fff ctermfg=63
 hi Normal         guifg=#bcbcbc guibg=#1c1c1c ctermfg=250 ctermbg=233
 hi CursorLineNr   guifg=#ffff00 guibg=NONE ctermfg=11 ctermbg=NONE
-hi colorColumn    guibg=#000080 ctermbg=4
+hi ColorColumn    guibg=#000080 ctermbg=4
 hi Directory      guifg=#00ffff guibg=NONE ctermfg=14 ctermbg=NONE
 hi LineNr         guifg=#808080 guibg=NONE ctermfg=244 ctermbg=NONE
 hi StatusLine     guifg=#005f5f guibg=#080808 gui=underline ctermfg=23 ctermbg=232 cterm=underline term=underline
@@ -75,12 +75,12 @@ hi Define         guifg=#ff8700 ctermfg=208
 hi DiffAdd        guifg=#00ff00 guibg=#005f00 cterm=NONE ctermfg=46 ctermbg=22 gui=NONE
 hi DiffDelete     guifg=#df0000 guibg=#5f0000 cterm=NONE ctermfg=9 ctermbg=52 gui=NONE
 hi DiffChange     cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
-hi difftext       guifg=#00ff00 guibg=#4e4e4e cterm=underline ctermfg=10 ctermbg=239 gui=underline
+hi DiffText       guifg=#00ff00 guibg=#4e4e4e cterm=underline ctermfg=10 ctermbg=239 gui=underline
 
 "Spell
 if has("spell")
-   hi spellBad       cterm=NONE ctermfg=9 ctermbg=52 gui=NONE guifg=#df0000 guibg=#5f0000
-   hi spellCap       cterm=NONE ctermfg=46 ctermbg=22 gui=NONE guifg=#00ff00 guibg=#005f00
-   hi spellRare      guifg=#bcbcbc guibg=#1c1c1c ctermfg=250 ctermbg=233
-   hi spelllocal     cterm=NONE ctermfg=NONE ctermbg=20 gui=NONE guifg=NONE guibg=#0000df
+   hi SpellBad       cterm=NONE ctermfg=9 ctermbg=52 gui=NONE guifg=#df0000 guibg=#5f0000
+   hi SpellCap       cterm=NONE ctermfg=46 ctermbg=22 gui=NONE guifg=#00ff00 guibg=#005f00
+   hi SpellRare      guifg=#bcbcbc guibg=#1c1c1c ctermfg=250 ctermbg=233
+   hi Spelllocal     cterm=NONE ctermfg=NONE ctermbg=20 gui=NONE guifg=NONE guibg=#0000df
 endif
